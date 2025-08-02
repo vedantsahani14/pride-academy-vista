@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Mail, Phone, Award, Users } from 'lucide-react';
+import managementHero from '@/assets/management-hero.jpg';
 
 const Management = () => {
   // Dummy management team data
@@ -90,13 +91,17 @@ const Management = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-navy-blue to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${managementHero})` }}
+      >
+        <div className="absolute inset-0 bg-navy-blue/60"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <div className="animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               School Management
             </h1>
-            <p className="text-xl md:text-2xl opacity-90">
+            <p className="text-xl md:text-2xl mb-8 opacity-90">
               Meet the dedicated leadership team driving excellence at National Pride Academy
             </p>
           </div>
