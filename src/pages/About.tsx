@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Target, Eye, Heart, Star, Users, Award } from 'lucide-react';
+import aboutHero from '@/assets/about-hero.jpg';
 
 const About = () => {
   const values = [
@@ -38,13 +39,17 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-navy-blue to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${aboutHero})` }}
+      >
+        <div className="absolute inset-0 bg-navy-blue/60"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <div className="animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               About Our School
             </h1>
-            <p className="text-xl md:text-2xl opacity-90 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
               Discover the rich history, values, and vision that drive National Pride Academy 
               in its mission to nurture tomorrow's leaders and global citizens.
             </p>

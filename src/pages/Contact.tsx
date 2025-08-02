@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import contactHero from '@/assets/contact-hero.jpg';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -57,13 +58,17 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-navy-blue to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactHero})` }}
+      >
+        <div className="absolute inset-0 bg-navy-blue/60"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <div className="animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Contact Us
             </h1>
-            <p className="text-xl md:text-2xl opacity-90">
+            <p className="text-xl md:text-2xl mb-8 opacity-90">
               Get in touch with our admissions team or schedule a campus visit
             </p>
           </div>
