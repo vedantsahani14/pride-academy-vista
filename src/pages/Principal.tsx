@@ -26,12 +26,18 @@ const Principal = () => {
       {/* Principal's Message */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
               {/* Principal's Photo & Info */}
               <div className="lg:col-span-1 animate-scale-in">
                 <Card className="shadow-elegant border-0 overflow-hidden">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-secondary to-secondary/50"></div>
+                  <div className="aspect-[3/4] bg-gradient-to-br from-secondary to-secondary/50 flex items-center justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=500&fit=crop&crop=face" 
+                      alt="Dr. Sarah Mitchell" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardContent className="p-6 text-center">
                     <h3 className="text-2xl font-bold text-primary mb-2">Dr. Sarah Mitchell</h3>
                     <p className="text-muted-foreground mb-4">Principal</p>
