@@ -2,21 +2,24 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import schoolLogo from '@/assets/school-logo.png';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Principal\'s Message', href: '/principal' },
-    { name: 'Management', href: '/management' },
-    { name: 'Teachers', href: '/teachers' },
-    { name: 'Students', href: '/students' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.principal'), href: '/principal' },
+    { name: t('nav.management'), href: '/management' },
+    { name: t('nav.teachers'), href: '/teachers' },
+    { name: t('nav.students'), href: '/students' },
+    { name: t('nav.gallery'), href: '/gallery' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -42,7 +45,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <nav className="hidden lg:flex items-center space-x-1">
               {navItems.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.href}
                   to={item.href}
                   className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
                     isActive(item.href)
@@ -53,17 +56,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   {item.name}
                 </Link>
               ))}
+              <LanguageSwitcher />
             </nav>
 
-            {/* Mobile Menu Button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+            {/* Mobile Menu Button & Language Switcher */}
+            <div className="flex items-center gap-2 lg:hidden">
+              <LanguageSwitcher />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -73,7 +79,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <nav className="container mx-auto px-4 py-4 space-y-2">
               {navItems.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.href}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 ${

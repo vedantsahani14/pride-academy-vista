@@ -1,0 +1,261 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "principal": "Principal",
+    "management": "Management", 
+    "teachers": "Teachers",
+    "students": "Students",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to Greenwood International School",
+      "subtitle": "Nurturing Excellence in Education Since 1985",
+      "cta1": "Discover Our Story",
+      "cta2": "Contact Us"
+    },
+    "features": {
+      "title": "Why Choose Greenwood?",
+      "academic": {
+        "title": "Academic Excellence",
+        "description": "Comprehensive curriculum with focus on critical thinking and creativity"
+      },
+      "extracurricular": {
+        "title": "Extracurricular Activities", 
+        "description": "Sports, arts, music, and clubs to develop well-rounded individuals"
+      },
+      "faculty": {
+        "title": "Expert Faculty",
+        "description": "Experienced and dedicated teachers committed to student success"
+      },
+      "facilities": {
+        "title": "Modern Facilities",
+        "description": "State-of-the-art classrooms, labs, library, and sports facilities"
+      }
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "admissions": "Admissions",
+      "academics": "Academics", 
+      "events": "Events",
+      "news": "News"
+    },
+    "cta": {
+      "title": "Ready to Join Our Community?",
+      "subtitle": "Take the first step towards your child's bright future",
+      "apply": "Apply Now",
+      "learn": "Learn More"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Greenwood International School",
+      "subtitle": "Shaping Future Leaders Through Quality Education"
+    },
+    "history": {
+      "title": "Our Story",
+      "founded": "Founded in 1985",
+      "description": "Greenwood International School was established with a vision to provide world-class education that nurtures both academic excellence and character development. Over the decades, we have grown into one of the region's most respected educational institutions.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide a nurturing environment that encourages intellectual curiosity, creativity, and critical thinking while fostering values of integrity, respect, and social responsibility."
+      },
+      "vision": {
+        "title": "Our Vision", 
+        "description": "To be a leading educational institution that prepares students to become confident, compassionate, and capable global citizens who contribute positively to society."
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "Striving for the highest standards in everything we do"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Acting with honesty and strong moral principles"
+      },
+      "innovation": {
+        "title": "Innovation", 
+        "description": "Embracing new ideas and creative approaches to learning"
+      },
+      "inclusivity": {
+        "title": "Inclusivity",
+        "description": "Celebrating diversity and ensuring equal opportunities for all"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "accreditation": "Internationally Accredited Institution",
+      "awards": "Multiple Educational Excellence Awards",
+      "results": "95% University Placement Rate",
+      "recognition": "Top 10 Schools in the Region"
+    },
+    "stats": {
+      "students": "Students",
+      "faculty": "Faculty Members", 
+      "years": "Years of Excellence",
+      "graduates": "Proud Graduates"
+    }
+  },
+  "principal": {
+    "hero": {
+      "title": "Principal's Message",
+      "subtitle": "Leadership with Vision and Compassion"
+    },
+    "name": "Dr. Sarah Mitchell",
+    "position": "Principal",
+    "qualifications": "Ph.D. in Educational Leadership, M.Ed. in Curriculum Development",
+    "experience": "25+ years in Educational Leadership",
+    "message": {
+      "p1": "Dear Students, Parents, and Faculty,",
+      "p2": "It is with great pride and enthusiasm that I welcome you to Greenwood International School. As an educator with over 25 years of experience, I have witnessed firsthand the transformative power of quality education.",
+      "p3": "Our school stands as a beacon of academic excellence, where we believe that every child has the potential to achieve greatness. We are committed to providing a nurturing environment that fosters intellectual curiosity, creativity, and critical thinking skills that will serve our students throughout their lives.",
+      "p4": "At Greenwood, we understand that education extends beyond textbooks and examinations. We strive to develop well-rounded individuals who are not only academically proficient but also possess strong moral values, leadership qualities, and a sense of social responsibility.",
+      "p5": "Our dedicated faculty, state-of-the-art facilities, and comprehensive curriculum ensure that every student receives the support and opportunities they need to reach their full potential. We encourage our students to dream big, work hard, and never stop learning.",
+      "p6": "Together, we are building a community of lifelong learners who will go on to make meaningful contributions to society. I invite you to join us on this exciting journey of discovery and growth.",
+      "closing": "Warm regards,",
+      "signature": "Dr. Sarah Mitchell"
+    },
+    "achievements": {
+      "title": "Achievements & Recognition",
+      "item1": "Educational Leadership Excellence Award 2023",
+      "item2": "Principal of the Year - Regional Education Board 2022", 
+      "item3": "Innovation in Education Award 2021",
+      "item4": "Community Service Recognition 2020"
+    },
+    "contact": {
+      "title": "Contact the Principal",
+      "schedule": "Schedule a Meeting",
+      "email": "Email Principal"
+    }
+  },
+  "management": {
+    "hero": {
+      "title": "Management Team",
+      "subtitle": "Experienced Leaders Dedicated to Educational Excellence"
+    },
+    "departments": {
+      "title": "Department Overview",
+      "administration": "Administration",
+      "academics": "Academic Departments",
+      "student": "Student Affairs", 
+      "facilities": "Facilities & Operations"
+    },
+    "team": {
+      "title": "Our Leadership Team"
+    },
+    "contact": {
+      "title": "Connect with Our Leadership",
+      "subtitle": "Our management team is always available to assist you",
+      "schedule": "Schedule a Meeting",
+      "contact": "Contact Administration"
+    }
+  },
+  "teachers": {
+    "hero": {
+      "title": "Our Faculty",
+      "subtitle": "Dedicated Educators Inspiring Excellence"
+    },
+    "departments": {
+      "title": "Academic Departments"
+    },
+    "team": {
+      "title": "Meet Our Teachers"
+    },
+    "join": {
+      "title": "Join Our Faculty",
+      "subtitle": "We're always looking for passionate educators",
+      "apply": "Apply to Teach",
+      "learn": "Learn About Careers"
+    }
+  },
+  "students": {
+    "hero": {
+      "title": "Student Life",
+      "subtitle": "A Vibrant Community of Young Minds"
+    },
+    "activities": {
+      "title": "Student Activities & Clubs"
+    },
+    "achievements": {
+      "title": "Student Achievements"
+    },
+    "council": {
+      "title": "Student Council",
+      "subtitle": "Developing Leadership Skills"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "School Gallery",
+      "subtitle": "Capturing Moments of Learning and Growth"
+    },
+    "filter": {
+      "all": "All",
+      "events": "Events",
+      "facilities": "Facilities",
+      "students": "Students",
+      "activities": "Activities"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in Touch with Greenwood International School"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "email": "Email Address", 
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Thank you! Your message has been sent successfully."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "value": "123 Education Avenue, Academic District, City 12345"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+1 (555) 123-4567"
+      },
+      "email": {
+        "title": "Email", 
+        "value": "info@greenwood.edu"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "value": "Monday - Friday: 8:00 AM - 5:00 PM"
+      }
+    },
+    "actions": {
+      "title": "Quick Actions",
+      "tour": "Schedule a Tour",
+      "brochure": "Download Brochure",
+      "callback": "Request Callback"
+    },
+    "map": {
+      "title": "Find Us",
+      "placeholder": "Interactive campus map will be displayed here"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "readMore": "Read More",
+    "learnMore": "Learn More", 
+    "contactUs": "Contact Us",
+    "apply": "Apply Now",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}

@@ -2,41 +2,44 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { GraduationCap, Users, Award, BookOpen, Calendar, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Home = () => {
+  const { t } = useTranslation();
+  
   const features = [
     {
       icon: GraduationCap,
-      title: "Academic Excellence",
-      description: "Comprehensive curriculum designed to nurture young minds and prepare students for future success.",
+      title: t('home.features.academic.title'),
+      description: t('home.features.academic.description'),
       link: "/about"
     },
     {
       icon: Users,
-      title: "Experienced Faculty",
-      description: "Dedicated teachers with years of experience in their respective fields, committed to student growth.",
+      title: t('home.features.faculty.title'),
+      description: t('home.features.faculty.description'),
       link: "/teachers"
     },
     {
       icon: Award,
-      title: "Outstanding Results",
-      description: "Consistent track record of excellent academic performance and university placements.",
+      title: t('home.features.extracurricular.title'),
+      description: t('home.features.extracurricular.description'),
       link: "/students"
     },
     {
       icon: BookOpen,
-      title: "Modern Facilities",
-      description: "State-of-the-art classrooms, laboratories, and learning resources for holistic education.",
+      title: t('home.features.facilities.title'),
+      description: t('home.features.facilities.description'),
       link: "/gallery"
     }
   ];
 
   const quickLinks = [
-    { title: "Principal's Message", description: "A word from our distinguished principal", link: "/principal" },
-    { title: "School Events", description: "Stay updated with upcoming activities", link: "/events" },
-    { title: "Admissions", description: "Join our academic community", link: "/contact" },
-    { title: "Gallery", description: "Explore our vibrant school life", link: "/gallery" }
+    { title: t('nav.principal'), description: "A word from our distinguished principal", link: "/principal" },
+    { title: t('home.quickLinks.events'), description: "Stay updated with upcoming activities", link: "/events" },
+    { title: t('home.quickLinks.admissions'), description: "Join our academic community", link: "/contact" },
+    { title: t('nav.gallery'), description: "Explore our vibrant school life", link: "/gallery" }
   ];
 
   return (
@@ -61,10 +64,10 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
               <Button asChild size="lg" className="text-lg px-8 py-6 rounded-2xl shadow-elegant">
-                <Link to="/about">Discover Our Story</Link>
+                <Link to="/about">{t('home.hero.cta1')}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-2xl bg-white/10 border-white/30 text-white hover:bg-white hover:text-navy-blue backdrop-blur-sm">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">{t('home.hero.cta2')}</Link>
               </Button>
             </div>
           </div>
@@ -76,7 +79,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Why Choose National Pride Academy?
+              {t('home.features.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We are committed to providing world-class education that shapes future leaders 
@@ -98,7 +101,7 @@ const Home = () => {
                     {feature.description}
                   </CardDescription>
                   <Button asChild variant="ghost" className="w-full">
-                    <Link to={feature.link}>Learn More</Link>
+                    <Link to={feature.link}>{t('common.learnMore')}</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -112,7 +115,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Explore Our School
+              {t('home.quickLinks.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover the various aspects of life at National Pride Academy
@@ -142,17 +145,17 @@ const Home = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Join Our Community?
+            {t('home.cta.title')}
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Take the first step towards an exceptional educational journey at National Pride Academy
+            {t('home.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 rounded-2xl">
-              <Link to="/contact">Apply Now</Link>
+              <Link to="/contact">{t('home.cta.apply')}</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 rounded-2xl border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/about">Learn More</Link>
+              <Link to="/about">{t('home.cta.learn')}</Link>
             </Button>
           </div>
         </div>
